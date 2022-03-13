@@ -104,11 +104,17 @@ const RegisterModal: React.FC = () => {
             disabled={isLoading}
             startIcon={<Google />}
             onClick={handleLoginWithGoogle}
+            data-testid="actions.auth.google.register"
           >
             {t('modals.auth.register.actions.google')}
           </Button>
 
-          <Button type="submit" onClick={handleSubmit(onSubmit)} disabled={isLoading}>
+          <Button
+            type="submit"
+            disabled={isLoading}
+            onClick={handleSubmit(onSubmit)}
+            data-testid="actions.auth.register"
+          >
             {t('modals.auth.register.actions.register')}
           </Button>
         </>

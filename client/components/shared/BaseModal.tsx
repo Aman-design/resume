@@ -27,6 +27,7 @@ const BaseModal: React.FC<Props> = ({ icon, isOpen, heading, children, handleClo
       open={isOpen}
       onClose={onClose}
       closeAfterTransition
+      data-testid={heading}
       aria-labelledby={heading}
       classes={{ root: 'flex items-center justify-center' }}
     >

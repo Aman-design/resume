@@ -187,7 +187,7 @@ const Home: NextPage = () => {
         <div className={styles.version}>
           <Footer className="font-semibold leading-5 opacity-50" />
 
-          <div>v{process.env.appVersion}</div>
+          <div data-testid="app.version">v{process.env.appVersion}</div>
         </div>
 
         <LanguageSwitcher />

@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "outDir": "./out",
+    "sourceMap": true,
+    "target": "esnext",
+    "paths": {
+      "@/constants/*": ["constants/*"],
+      "@/specs/*": ["specs/*"]
+    }
+  }
+}
